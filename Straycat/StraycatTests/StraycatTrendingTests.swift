@@ -21,12 +21,5 @@ class StraycatTrendingTests: XCTestCase {
         super.tearDown()
     }
     
-    func testTrendingRepo() {
-        let expectation = XCTestExpectation(description: "Response should be return in \(timeout)s")
-        StrayTrendingParseManager.shared.fetch { success, repos in
-            
-        }
-        
-        wait(for: [expectation], timeout: timeout)
-    }
+    
 }

@@ -8,7 +8,7 @@
 
 import UIKit
 
-struct StrayTrendingRepo {
+public struct StrayTrendingRepo {
     var language: String = ""
     var fullname: String = ""
     var star: UInt = 0

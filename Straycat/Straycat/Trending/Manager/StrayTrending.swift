@@ -8,12 +8,11 @@
 
 import UIKit
 import Alamofire
-import SwiftSoup
 
-class StrayTrendingParseManager: NSObject {
+public class StrayTrending: NSObject {
     
     /// Trending 种类
-    enum TrendingType {
+    public enum TrendingType {
         /// Repo: https://github.com/trending
         case repository
         /// Repo: https://github.com/trending/developers
@@ -21,7 +20,7 @@ class StrayTrendingParseManager: NSObject {
     }
     
     /// 筛选 Item
-    enum TrendingTimeRange: String {
+    public enum TrendingTimeRange: String {
         /// today
         case today = "daily"
         /// this week
@@ -30,10 +29,13 @@ class StrayTrendingParseManager: NSObject {
         case thisMonth = "monthly"
     }
     
-    static let shared = StrayTrendingParseManager()
+    /// 仅做声明
+    class Parser: StrayParser {}
+    
+    public static let shared = StrayTrending()
 }
 
-extension StrayTrendingParseManager {
+extension StrayTrending {
     /// 获取 Trending Repo 信息
     public func fetch(_ type: TrendingType = .repository,
                       language: String = "all",

@@ -11,7 +11,7 @@
 		75D0F3C0205B77B2004D313D /* StraycatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D0F3BF205B77B2004D313D /* StraycatTests.swift */; };
 		75D0F3C2205B77B2004D313D /* Straycat.h in Headers */ = {isa = PBXBuildFile; fileRef = 75D0F3B4205B77B2004D313D /* Straycat.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		75D0F3CE205B78F1004D313D /* StrayTrendingRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D0F3CD205B78F1004D313D /* StrayTrendingRepo.swift */; };
-		75D0F3D1205B7987004D313D /* StrayTrendingParseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D0F3D0205B7987004D313D /* StrayTrendingParseManager.swift */; };
+		75D0F3D1205B7987004D313D /* StrayTrending.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D0F3D0205B7987004D313D /* StrayTrending.swift */; };
 		75D0F3D3205B8000004D313D /* StraycatTrendingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D0F3D2205B8000004D313D /* StraycatTrendingTests.swift */; };
 		75D0F3D7205B8687004D313D /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 75D0F3D6205B8687004D313D /* libxml2.tbd */; };
 		75D0F3DF205B923D004D313D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D0F3DE205B923D004D313D /* AppDelegate.swift */; };
@@ -21,6 +21,10 @@
 		75D0F3E9205B923D004D313D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75D0F3E7205B923D004D313D /* LaunchScreen.storyboard */; };
 		75D0F3F4205B923D004D313D /* StraycatSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D0F3F3205B923D004D313D /* StraycatSampleTests.swift */; };
 		BC4C8AA81F69534B032CB3C7 /* Pods_Straycat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E47102B8719AC2D321F1A75 /* Pods_Straycat.framework */; };
+		D51B553F205C185C005F1DF0 /* Straycat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75D0F3B1205B77B2004D313D /* Straycat.framework */; };
+		D51B5540205C185C005F1DF0 /* Straycat.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 75D0F3B1205B77B2004D313D /* Straycat.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D51B5547205C1D58005F1DF0 /* StrayTrendingParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51B5545205C1D50005F1DF0 /* StrayTrendingParser.swift */; };
+		D51B5549205C2262005F1DF0 /* StrayParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51B5548205C2262005F1DF0 /* StrayParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +42,28 @@
 			remoteGlobalIDString = 75D0F3DB205B923C004D313D;
 			remoteInfo = StraycatSample;
 		};
+		D51B5541205C185C005F1DF0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75D0F3A8205B77B2004D313D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 75D0F3B0205B77B2004D313D;
+			remoteInfo = Straycat;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D51B5543205C185C005F1DF0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D51B5540205C185C005F1DF0 /* Straycat.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		68B9D9D734D2A385AC262147 /* Pods-Straycat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Straycat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Straycat/Pods-Straycat.debug.xcconfig"; sourceTree = "<group>"; };
@@ -50,7 +75,7 @@
 		75D0F3BF205B77B2004D313D /* StraycatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StraycatTests.swift; sourceTree = "<group>"; };
 		75D0F3C1205B77B2004D313D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75D0F3CD205B78F1004D313D /* StrayTrendingRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrayTrendingRepo.swift; sourceTree = "<group>"; };
-		75D0F3D0205B7987004D313D /* StrayTrendingParseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrayTrendingParseManager.swift; sourceTree = "<group>"; };
+		75D0F3D0205B7987004D313D /* StrayTrending.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrayTrending.swift; sourceTree = "<group>"; };
 		75D0F3D2205B8000004D313D /* StraycatTrendingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StraycatTrendingTests.swift; sourceTree = "<group>"; };
 		75D0F3D4205B866C004D313D /* libxml2.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.2.tbd; path = usr/lib/libxml2.2.tbd; sourceTree = SDKROOT; };
 		75D0F3D6205B8687004D313D /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
@@ -64,6 +89,11 @@
 		75D0F3EF205B923D004D313D /* StraycatSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StraycatSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75D0F3F3205B923D004D313D /* StraycatSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StraycatSampleTests.swift; sourceTree = "<group>"; };
 		75D0F3F5205B923D004D313D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83C91DC08077DBE424CE85C1 /* Pods-StraycatSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StraycatSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-StraycatSample/Pods-StraycatSample.release.xcconfig"; sourceTree = "<group>"; };
+		B6342CACBDC93842F28B3C59 /* Pods-StraycatSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StraycatSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StraycatSample/Pods-StraycatSample.debug.xcconfig"; sourceTree = "<group>"; };
+		B9557A6254E3345A67BF8E96 /* Pods_StraycatSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StraycatSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D51B5545205C1D50005F1DF0 /* StrayTrendingParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrayTrendingParser.swift; sourceTree = "<group>"; };
+		D51B5548205C2262005F1DF0 /* StrayParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrayParser.swift; sourceTree = "<group>"; };
 		D5286C8589E80395F2F62C43 /* Pods-Straycat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Straycat.release.xcconfig"; path = "Pods/Target Support Files/Pods-Straycat/Pods-Straycat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,6 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D51B553F205C185C005F1DF0 /* Straycat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				75D0F3B4205B77B2004D313D /* Straycat.h */,
+				D51B5548205C2262005F1DF0 /* StrayParser.swift */,
 				75D0F3CB205B78C5004D313D /* Trending */,
 				75D0F3B5205B77B2004D313D /* Info.plist */,
 			);
@@ -149,6 +181,7 @@
 		75D0F3CB205B78C5004D313D /* Trending */ = {
 			isa = PBXGroup;
 			children = (
+				D51B5544205C1D0E005F1DF0 /* Manager */,
 				75D0F3CF205B796E004D313D /* Parse */,
 				75D0F3CC205B78CC004D313D /* Model */,
 			);
@@ -166,7 +199,7 @@
 		75D0F3CF205B796E004D313D /* Parse */ = {
 			isa = PBXGroup;
 			children = (
-				75D0F3D0205B7987004D313D /* StrayTrendingParseManager.swift */,
+				D51B5545205C1D50005F1DF0 /* StrayTrendingParser.swift */,
 			);
 			path = Parse;
 			sourceTree = "<group>";
@@ -198,6 +231,8 @@
 			children = (
 				68B9D9D734D2A385AC262147 /* Pods-Straycat.debug.xcconfig */,
 				D5286C8589E80395F2F62C43 /* Pods-Straycat.release.xcconfig */,
+				B6342CACBDC93842F28B3C59 /* Pods-StraycatSample.debug.xcconfig */,
+				83C91DC08077DBE424CE85C1 /* Pods-StraycatSample.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -208,8 +243,17 @@
 				75D0F3D6205B8687004D313D /* libxml2.tbd */,
 				75D0F3D4205B866C004D313D /* libxml2.2.tbd */,
 				6E47102B8719AC2D321F1A75 /* Pods_Straycat.framework */,
+				B9557A6254E3345A67BF8E96 /* Pods_StraycatSample.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D51B5544205C1D0E005F1DF0 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				75D0F3D0205B7987004D313D /* StrayTrending.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,13 +312,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 75D0F3F6205B923D004D313D /* Build configuration list for PBXNativeTarget "StraycatSample" */;
 			buildPhases = (
+				FD2B7771D0BA779CA6885C1C /* [CP] Check Pods Manifest.lock */,
 				75D0F3D8205B923C004D313D /* Sources */,
 				75D0F3D9205B923C004D313D /* Frameworks */,
 				75D0F3DA205B923C004D313D /* Resources */,
+				D51B5543205C185C005F1DF0 /* Embed Frameworks */,
+				28454003919D4C03DAC526FE /* [CP] Embed Pods Frameworks */,
+				DB19410AA67ECB62C2124147 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D51B5542205C185C005F1DF0 /* PBXTargetDependency */,
 			);
 			name = StraycatSample;
 			productName = StraycatSample;
@@ -385,6 +434,26 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		28454003919D4C03DAC526FE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-StraycatSample/Pods-StraycatSample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftSoup/SwiftSoup.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSoup.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StraycatSample/Pods-StraycatSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		34BF99B6D0D1F5485A4CB344 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -418,6 +487,39 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Straycat/Pods-Straycat-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		DB19410AA67ECB62C2124147 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StraycatSample/Pods-StraycatSample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD2B7771D0BA779CA6885C1C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StraycatSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -425,8 +527,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75D0F3D1205B7987004D313D /* StrayTrendingParseManager.swift in Sources */,
+				D51B5549205C2262005F1DF0 /* StrayParser.swift in Sources */,
+				75D0F3D1205B7987004D313D /* StrayTrending.swift in Sources */,
 				75D0F3CE205B78F1004D313D /* StrayTrendingRepo.swift in Sources */,
+				D51B5547205C1D58005F1DF0 /* StrayTrendingParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,6 +572,11 @@
 			isa = PBXTargetDependency;
 			target = 75D0F3DB205B923C004D313D /* StraycatSample */;
 			targetProxy = 75D0F3F0205B923D004D313D /* PBXContainerItemProxy */;
+		};
+		D51B5542205C185C005F1DF0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 75D0F3B0205B77B2004D313D /* Straycat */;
+			targetProxy = D51B5541205C185C005F1DF0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -683,7 +792,9 @@
 		};
 		75D0F3F7205B923D004D313D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6342CACBDC93842F28B3C59 /* Pods-StraycatSample.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DNL5G5M9A8;
@@ -698,7 +809,9 @@
 		};
 		75D0F3F8205B923D004D313D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83C91DC08077DBE424CE85C1 /* Pods-StraycatSample.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DNL5G5M9A8;

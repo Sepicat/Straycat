@@ -7,6 +7,7 @@
 //
 
 import XCTest
+
 @testable import StraycatSample
 
 class StraycatSampleTests: XCTestCase {
@@ -31,6 +32,15 @@ class StraycatSampleTests: XCTestCase {
         self.measure {
             // Put the code you want to measure the time of here.
         }
+    }
+    
+    func testTrendingRepo() {
+        let expectation = XCTestExpectation(description: "Response should be return in \(timeout)s")
+        StrayTrendingParseManager.shared.fetch { success, repos in
+            
+        }
+        
+        wait(for: [expectation], timeout: timeout)
     }
     
 }

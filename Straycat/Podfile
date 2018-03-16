@@ -6,3 +6,8 @@ target 'Straycat' do
     pod 'SwiftSoup', '~> 1.6.3'
     pod 'Alamofire', '~> 4.5'
 end
+
+target 'StraycatSample' do
+    pod 'SwiftSoup', '~> 1.6.3'
+    pod 'Alamofire', '~> 4.5'
+end
