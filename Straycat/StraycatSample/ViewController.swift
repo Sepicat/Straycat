@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
 //        StrayTrending.shared.fe
-        StrayTrending.shared.fetchRepo { success, repos in
+        StrayTrending.shared.fetchDev { success, devs in
             
         }
         

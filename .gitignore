@@ -3,6 +3,7 @@
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
 
 ## Build generated
+#.DS_Store
 build/
 DerivedData/
 
@@ -49,6 +50,7 @@ playground.xcworkspace
 Pods/
 
 # Carthage
+#
 #
 # Add this line if you want to avoid checking in source code from Carthage dependencies.
 Carthage/Checkouts

@@ -20,8 +20,9 @@ public struct StrayTrendingRepo {
 
 /// Trending Dev Model
 public struct StrayTrendingDev {
+    var avatar: String = ""
     var login: String = ""
     var nickname: String = ""
     var repoName: String = ""
-    var repoDescription: Strin = ""
+    var repoDescription: String = ""
 }
