@@ -36,9 +36,8 @@ public class StrayTrending: NSObject {
 }
 
 extension StrayTrending {
-    /// 获取 Trending Repo 信息
-    public func fetch(_ type: TrendingType = .repository,
-                      language: String = "all",
+    /// 获取 Trending 信息
+    public func fetchRepo(language: String = "all",
                       time: TrendingTimeRange = .today,
                       completion: @escaping (Bool, [StrayTrendingRepo]?) -> Void) {
         guard let url = URL(string: "https://github.com/trending") else {
@@ -48,7 +47,7 @@ extension StrayTrending {
             response in
             switch response.result {
             case .success(let data):
-                print(data)
+                StrayTrending.Parser.fetchHandle(.swiftSoup, type: .repository, html: data, completion: { completion(true, $0 as? [StrayTrendingRepo]) })
             case .failure(let error):
                 print(error.localizedDescription)
             }

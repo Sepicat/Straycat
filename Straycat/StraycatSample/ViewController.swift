@@ -14,9 +14,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        StrayTrendingParseManager.shared.fetch { success, repos in
+//        StrayTrending.shared.fe
+        StrayTrending.shared.fetchRepo { success, repos in
             
         }
+        
     }
 }
 
