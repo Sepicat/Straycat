@@ -81,12 +81,12 @@ extension StrayTrending.Parser {
                 let devs: [StrayTrendingDev] = devListHtml.map {
                     element -> StrayTrendingDev in
                     var dev = StrayTrendingDev()
-                    dev.avatar = try! devListHtml[0]
+                    dev.avatar = try! element
                         .select("img").attr("class", "rounded-1").first()?.attr("src") ?? ""
-                    (dev.login, dev.nickname) = try! devListHtml[0]
+                    (dev.login, dev.nickname) = try! element
                         .select("div").attr("class", "mx-2").array()[2].children().array().first?
                         .select("a").array().first?.text().splitLoginAndName() ?? ("", "")
-                    dev.repoName = try! devListHtml[0].select("span").attr("class", "repo").array()[1].text()
+                    dev.repoName = try! element.select("span").attr("class", "repo").array()[1].text()
                     return dev
                 }
                 let end = Date().timeIntervalSince1970

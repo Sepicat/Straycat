@@ -10,19 +10,19 @@ import UIKit
 
 /// Trending Repo Model
 public struct StrayTrendingRepo {
-    var language: String = ""
-    var fullname: String = ""
-    var description: String = ""
-    var star: UInt = 0
-    var forkers: UInt = 0
-    var gains: String = ""
+    public var language: String = ""
+    public var fullname: String = ""
+    public var description: String = ""
+    public var star: UInt = 0
+    public var forkers: UInt = 0
+    public var gains: String = ""
 }
 
 /// Trending Dev Model
 public struct StrayTrendingDev {
-    var avatar: String = ""
-    var login: String = ""
-    var nickname: String = ""
-    var repoName: String = ""
-    var repoDescription: String = ""
+    public var avatar: String = ""
+    public var login: String = ""
+    public var nickname: String = ""
+    public var repoName: String = ""
+    public var repoDescription: String = ""
 }
