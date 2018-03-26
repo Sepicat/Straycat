@@ -1,5 +1,7 @@
 # Straycat
 
+![](Straycat-logo.png)
+
 ![](https://img.shields.io/badge/Swift-4.0-orange.svg)
 ![](https://img.shields.io/badge/CocoaPods-1.1+-green.svg)
 ![](https://img.shields.io/badge/License-GPL--3.0-blue.svg)
