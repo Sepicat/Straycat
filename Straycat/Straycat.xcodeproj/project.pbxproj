@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33AE47A4B8B48C8FEB1ABAF8 /* Pods_StraycatSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9557A6254E3345A67BF8E96 /* Pods_StraycatSample.framework */; };
+		7576B36520688AE300FCD9A6 /* StrayTrendingParser+SwiftSoup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7576B36420688AE300FCD9A6 /* StrayTrendingParser+SwiftSoup.swift */; };
+		7576B36720688B2500FCD9A6 /* StrayTrendingParser+Kanna.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7576B36620688B2500FCD9A6 /* StrayTrendingParser+Kanna.swift */; };
 		75D0F3BB205B77B2004D313D /* Straycat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75D0F3B1205B77B2004D313D /* Straycat.framework */; };
 		75D0F3C0205B77B2004D313D /* StraycatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D0F3BF205B77B2004D313D /* StraycatTests.swift */; };
 		75D0F3C2205B77B2004D313D /* Straycat.h in Headers */ = {isa = PBXBuildFile; fileRef = 75D0F3B4205B77B2004D313D /* Straycat.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -68,6 +71,8 @@
 /* Begin PBXFileReference section */
 		68B9D9D734D2A385AC262147 /* Pods-Straycat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Straycat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Straycat/Pods-Straycat.debug.xcconfig"; sourceTree = "<group>"; };
 		6E47102B8719AC2D321F1A75 /* Pods_Straycat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Straycat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7576B36420688AE300FCD9A6 /* StrayTrendingParser+SwiftSoup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StrayTrendingParser+SwiftSoup.swift"; sourceTree = "<group>"; };
+		7576B36620688B2500FCD9A6 /* StrayTrendingParser+Kanna.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StrayTrendingParser+Kanna.swift"; sourceTree = "<group>"; };
 		75D0F3B1205B77B2004D313D /* Straycat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Straycat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		75D0F3B4205B77B2004D313D /* Straycat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Straycat.h; sourceTree = "<group>"; };
 		75D0F3B5205B77B2004D313D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -120,6 +125,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D51B553F205C185C005F1DF0 /* Straycat.framework in Frameworks */,
+				33AE47A4B8B48C8FEB1ABAF8 /* Pods_StraycatSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,6 +206,8 @@
 			isa = PBXGroup;
 			children = (
 				D51B5545205C1D50005F1DF0 /* StrayTrendingParser.swift */,
+				7576B36420688AE300FCD9A6 /* StrayTrendingParser+SwiftSoup.swift */,
+				7576B36620688B2500FCD9A6 /* StrayTrendingParser+Kanna.swift */,
 			);
 			path = Parse;
 			sourceTree = "<group>";
@@ -442,11 +450,13 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-StraycatSample/Pods-StraycatSample-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kanna/Kanna.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftSoup/SwiftSoup.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kanna.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSoup.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -528,8 +538,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D51B5549205C2262005F1DF0 /* StrayParser.swift in Sources */,
+				7576B36720688B2500FCD9A6 /* StrayTrendingParser+Kanna.swift in Sources */,
 				75D0F3D1205B7987004D313D /* StrayTrending.swift in Sources */,
 				75D0F3CE205B78F1004D313D /* StrayTrendingModel.swift in Sources */,
+				7576B36520688AE300FCD9A6 /* StrayTrendingParser+SwiftSoup.swift in Sources */,
 				D51B5547205C1D58005F1DF0 /* StrayTrendingParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

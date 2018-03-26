@@ -12,5 +12,6 @@ public class StrayParser: NSObject {
     
     public enum ParserTool {
         case swiftSoup
+        case kanna
     }
 }

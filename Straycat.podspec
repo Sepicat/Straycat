@@ -13,4 +13,5 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '10.0'
   s.dependency 'Alamofire', '~> 4.5'
   s.dependency 'SwiftSoup', '~> 1.6.3'
+  s.dependency 'Kanna', '~> 4.0.0'
 end

@@ -15,10 +15,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
 //        StrayTrending.shared.fe
-        StrayTrending.shared.fetchDev { success, devs in
-            
-        }
+        StrayTrending.shared.fetchDev(tool: .kanna) { _, _ in }
         
+        StrayTrending.shared.fetchRepo(tool: .swiftSoup) { _,_ in }
     }
 }
 

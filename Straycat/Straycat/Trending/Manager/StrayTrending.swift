@@ -39,6 +39,7 @@ extension StrayTrending {
     /// 获取 Trending 信息
     public func fetchRepo(language: String = "all",
                           time: TrendingTimeRange = .today,
+                          tool: StrayParser.ParserTool = .swiftSoup,
                           completion: @escaping (Bool, [StrayTrendingRepo]?) -> Void) {
         guard let url = URL(string: "https://github.com/trending/\(language)") else {
             return
@@ -50,7 +51,7 @@ extension StrayTrending {
             .responseString(queue: nil, encoding: .utf8) { response in
             switch response.result {
             case .success(let data):
-                StrayTrending.Parser.fetchHandle(.swiftSoup, type: .repository, html: data, completion: { completion(true, $0 as? [StrayTrendingRepo]) })
+                StrayTrending.Parser.fetchHandle(tool, type: .repository, html: data, completion: { completion(true, $0 as? [StrayTrendingRepo]) })
             case .failure(let error):
                 print(error.localizedDescription)
             }
@@ -60,6 +61,7 @@ extension StrayTrending {
     /// 获取 Developers
     public func fetchDev(language: String = "all",
                          time: TrendingTimeRange = .today,
+                         tool: StrayParser.ParserTool = .swiftSoup,
                          completion: @escaping (Bool, [StrayTrendingDev]?) -> Void) {
         guard let url = URL(string: "https://github.com/trending/developers/\(language)") else {
             return
@@ -71,7 +73,7 @@ extension StrayTrending {
             .responseString(queue: nil, encoding: .utf8) { response in
             switch response.result {
             case .success(let data):
-                StrayTrending.Parser.fetchHandle(.swiftSoup, type: .developer, html: data, completion: { completion(true, $0 as? [StrayTrendingDev]) })
+                StrayTrending.Parser.fetchHandle(tool, type: .developer, html: data, completion: { completion(true, $0 as? [StrayTrendingDev]) })
             case .failure(let error):
                 print(error.localizedDescription)
             }
