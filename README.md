@@ -55,6 +55,14 @@ StrayTrending.shared.fetchDev(language: "all", time: .today, tool: .kanna) {
 }
 ```
 
+## Sepicat 组件
+
+欢迎支持已经上架的个人应用 Sepicat - 致力于打造最 Geekful 的 GitHub 客户端。
+
+<a href="https://itunes.apple.com/cn/app/sepicat/id1355383210?mt=8">
+<img src="https://linkmaker.itunes.apple.com/assets/shared/badges/zh-cht/appstore-lrg-513dfa9cea2b10efb09cbf38d8cb834a3aec771e41d6dfc273199a448420b91c.svg" />
+</a>
+
 ## 数据源提供
 
 倘若有更好的 GitHub 数据源，欢迎在 issue 中提供。
