@@ -13,5 +13,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '10.0'
   s.dependency 'Alamofire', '~> 4.5'
   s.dependency 'SwiftSoup', '~> 1.6.3'
+
+  s.pod_target_xcconfig = { 'HEADER_SEARCH_PATHS' => "$(SDKROOT)/usr/include/libxml2" }
   s.dependency 'Kanna', '~> 4.0.0'
 end
