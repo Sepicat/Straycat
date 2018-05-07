@@ -10,6 +10,7 @@
 		33AE47A4B8B48C8FEB1ABAF8 /* Pods_StraycatSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9557A6254E3345A67BF8E96 /* Pods_StraycatSample.framework */; };
 		7576B36520688AE300FCD9A6 /* StrayTrendingParser+SwiftSoup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7576B36420688AE300FCD9A6 /* StrayTrendingParser+SwiftSoup.swift */; };
 		7576B36720688B2500FCD9A6 /* StrayTrendingParser+Kanna.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7576B36620688B2500FCD9A6 /* StrayTrendingParser+Kanna.swift */; };
+		75C8182E20A07AD90018A610 /* Array+Safe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C8182D20A07AD90018A610 /* Array+Safe.swift */; };
 		75D0F3BB205B77B2004D313D /* Straycat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75D0F3B1205B77B2004D313D /* Straycat.framework */; };
 		75D0F3C0205B77B2004D313D /* StraycatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D0F3BF205B77B2004D313D /* StraycatTests.swift */; };
 		75D0F3C2205B77B2004D313D /* Straycat.h in Headers */ = {isa = PBXBuildFile; fileRef = 75D0F3B4205B77B2004D313D /* Straycat.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -73,6 +74,7 @@
 		6E47102B8719AC2D321F1A75 /* Pods_Straycat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Straycat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7576B36420688AE300FCD9A6 /* StrayTrendingParser+SwiftSoup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StrayTrendingParser+SwiftSoup.swift"; sourceTree = "<group>"; };
 		7576B36620688B2500FCD9A6 /* StrayTrendingParser+Kanna.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StrayTrendingParser+Kanna.swift"; sourceTree = "<group>"; };
+		75C8182D20A07AD90018A610 /* Array+Safe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Safe.swift"; sourceTree = "<group>"; };
 		75D0F3B1205B77B2004D313D /* Straycat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Straycat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		75D0F3B4205B77B2004D313D /* Straycat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Straycat.h; sourceTree = "<group>"; };
 		75D0F3B5205B77B2004D313D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -139,6 +141,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		75C8182C20A07ABB0018A610 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				75C8182D20A07AD90018A610 /* Array+Safe.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		75D0F3A7205B77B2004D313D = {
 			isa = PBXGroup;
 			children = (
@@ -187,6 +197,7 @@
 		75D0F3CB205B78C5004D313D /* Trending */ = {
 			isa = PBXGroup;
 			children = (
+				75C8182C20A07ABB0018A610 /* Helper */,
 				D51B5544205C1D0E005F1DF0 /* Manager */,
 				75D0F3CF205B796E004D313D /* Parse */,
 				75D0F3CC205B78CC004D313D /* Model */,
@@ -540,6 +551,7 @@
 				D51B5549205C2262005F1DF0 /* StrayParser.swift in Sources */,
 				7576B36720688B2500FCD9A6 /* StrayTrendingParser+Kanna.swift in Sources */,
 				75D0F3D1205B7987004D313D /* StrayTrending.swift in Sources */,
+				75C8182E20A07AD90018A610 /* Array+Safe.swift in Sources */,
 				75D0F3CE205B78F1004D313D /* StrayTrendingModel.swift in Sources */,
 				7576B36520688AE300FCD9A6 /* StrayTrendingParser+SwiftSoup.swift in Sources */,
 				D51B5547205C1D58005F1DF0 /* StrayTrendingParser.swift in Sources */,

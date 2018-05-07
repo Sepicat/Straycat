@@ -47,13 +47,23 @@ extension StrayTrending.Parser {
                         if let introduction = repoHTML.at_xpath("//p")?.text {
                             _repo.description = introduction.trimFirstAndLastEmptyCharactor()
                         }
-                        if let stars = repoHTML.xpath("//a")[2].text {
-                            let starsStr = stars.trimFirstAndLastEmptyCharactor().replacingOccurrences(of: ",", with: "")
-                            _repo.star = UInt(starsStr) ?? 0
+                        // 双策略（这里很迷，和机型有关）
+                        let aTags = repoHTML.xpath("//div//a")
+                        var starsIndex = 1
+                        var forksIndex = 2
+                        if aTags.count >= 10 {
+                            starsIndex += 1
+                            forksIndex += 1
                         }
-                        if let forkers = repoHTML.xpath("//a")[3].text {
-                            let forkers = forkers.trimFirstAndLastEmptyCharactor().replacingOccurrences(of: ",", with: "")
-                            _repo.forkers = UInt(forkers) ?? 0
+                        if aTags.count > starsIndex && aTags.count > forksIndex {
+                            if let stars = aTags[starsIndex].text {
+                                let starsStr = stars.trimFirstAndLastEmptyCharactor().replacingOccurrences(of: ",", with: "")
+                                _repo.star = UInt(starsStr) ?? 0
+                            }
+                            if let forkers = aTags[forksIndex].text {
+                                let forkers = forkers.trimFirstAndLastEmptyCharactor().replacingOccurrences(of: ",", with: "")
+                                _repo.forkers = UInt(forkers) ?? 0
+                            }
                         }
                         ans.append(_repo)
                     }

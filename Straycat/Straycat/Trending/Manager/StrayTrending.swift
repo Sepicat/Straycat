@@ -40,6 +40,7 @@ extension StrayTrending {
     public func fetchRepo(language: String = "all",
                           time: TrendingTimeRange = .today,
                           tool: StrayParser.ParserTool = .swiftSoup,
+                          header: [String: String]? = nil,
                           completion: @escaping (Bool, [StrayTrendingRepo]?) -> Void) {
         guard let url = URL(string: "https://github.com/trending/\(language)") else {
             return
@@ -47,7 +48,7 @@ extension StrayTrending {
         let params: [String: Any] = [
             "since": time.rawValue,
         ]
-        Alamofire.request(url, method: .get, parameters: params, encoding: URLEncoding.default, headers: nil)
+        Alamofire.request(url, method: .get, parameters: params, encoding: URLEncoding.default, headers: header)
             .responseString(queue: nil, encoding: .utf8) { response in
             switch response.result {
             case .success(let data):
@@ -62,6 +63,7 @@ extension StrayTrending {
     public func fetchDev(language: String = "all",
                          time: TrendingTimeRange = .today,
                          tool: StrayParser.ParserTool = .swiftSoup,
+                         header: [String: String]? = nil,
                          completion: @escaping (Bool, [StrayTrendingDev]?) -> Void) {
         guard let url = URL(string: "https://github.com/trending/developers/\(language)") else {
             return
@@ -69,7 +71,7 @@ extension StrayTrending {
         let params: [String: Any] = [
             "since": time.rawValue,
         ]
-        Alamofire.request(url, method: .get, parameters: params, encoding: URLEncoding.default, headers: nil)
+        Alamofire.request(url, method: .get, parameters: params, encoding: URLEncoding.default, headers: header)
             .responseString(queue: nil, encoding: .utf8) { response in
             switch response.result {
             case .success(let data):
