@@ -33,22 +33,46 @@ extension StrayTrending.Parser {
                     var repo = StrayTrendingRepo()
                     repo.fullname = try! element
                         .select("h3").first()?.text() ?? ""
+                    
                     repo.description = try! element
                         .select("p").first()?.attr("class", "col-9 d-inline-block text-gray m-0 pr-4").text() ?? ""
-                    repo.language = try! element
-                        .select("span").attr("itemprop", "programmingLanguage").array()[1].text()
-                    if repo.language == "Built" {
+                    
+                    // language 数据
+                    do {
+                        if let languageSpanTags = try? element.select("span").attr("itemprop", "programmingLanguage").array(),
+                            languageSpanTags.count >= 2 {
+                            repo.language = try languageSpanTags[1].text()
+                        }
+                    }
+                    catch { }
+                    
+                    if repo.language.hasPrefix("Built") ||
+                        repo.language.hasSuffix("today") {
                         repo.language = "unknown"
                     }
-                    repo.star = UInt(try! element
-                        .select("a").attr("class", "muted-link d-inline-block mr-3").array()[2].text()
-                        .replacingOccurrences(of: ",", with: "")) ?? 0
-                    repo.forkers = UInt(try! element
-                        .select("a").attr("class", "muted-link d-inline-block mr-3").array()[3].text()
-                        .replacingOccurrences(of: ",", with: "")) ?? 0
-                    repo.gains = try! element
-                        .select("span").attr("class", "muted-link d-inline-block mr-3").array()[2].text()
-                        .replacingOccurrences(of: ",", with: "")
+                    
+                    // star & forkers 数据
+                    do {
+                        if let aTags = try? element.select("a").attr("class", "muted-link d-inline-block mr-3").array(),
+                            aTags.count >= 4 {
+                            repo.star = UInt(try aTags[2].text()
+                                .replacingOccurrences(of: ",", with: "")) ?? 0
+                            repo.forkers = UInt(try aTags[3].text()
+                                .replacingOccurrences(of: ",", with: "")) ?? 0
+                        }
+                    }
+                    catch {}
+                    
+                    // gains 数据
+                    do {
+                        if let spanTags = try? element.select("span").attr("class", "muted-link d-inline-block mr-3").array(),
+                            spanTags.count >= 3 {
+                            repo.gains = try spanTags[2].text()
+                                .replacingOccurrences(of: ",", with: "")
+                        }
+                    }
+                    catch {}
+                    
                     return repo
                 }
                 let end = Date().timeIntervalSince1970

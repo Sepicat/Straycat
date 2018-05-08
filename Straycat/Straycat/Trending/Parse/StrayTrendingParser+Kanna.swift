@@ -38,24 +38,32 @@ extension StrayTrending.Parser {
                         if let fullname = repoHTML.at_xpath("//a")?.text {
                             _repo.fullname = fullname.trimEmptyCharactor()
                         }
-                        if let language = repoHTML.xpath("//span")[1].text {
-                            _repo.language = language.trimFirstAndLastEmptyCharactor()
-                            if _repo.language == "Built by" {
-                                _repo.language = "unknown"
+                        
+                        // 获取语言
+                        let spanTags = repoHTML.xpath("//span")
+                        if spanTags.count >= 2 {
+                            if let language = spanTags[1].text {
+                                _repo.language = language.trimFirstAndLastEmptyCharactor()
+                                // 纠正处理
+                                if _repo.language == "Built by" ||
+                                    _repo.language.hasSuffix("today") {
+                                    _repo.language = "unknown"
+                                }
                             }
+                        } else {
+                            _repo.language = "unknown"
                         }
+                        
                         if let introduction = repoHTML.at_xpath("//p")?.text {
                             _repo.description = introduction.trimFirstAndLastEmptyCharactor()
                         }
+                        
                         // 双策略（这里很迷，和机型有关）
+                        // 由于 Tags 数量有问题，所以轮训一下所有相邻标签来判断合法性
                         let aTags = repoHTML.xpath("//div//a")
                         var starsIndex = 1
                         var forksIndex = 2
-                        if aTags.count >= 10 {
-                            starsIndex += 1
-                            forksIndex += 1
-                        }
-                        if aTags.count > starsIndex && aTags.count > forksIndex {
+                        while aTags.count > starsIndex && aTags.count > forksIndex {
                             if let stars = aTags[starsIndex].text {
                                 let starsStr = stars.trimFirstAndLastEmptyCharactor().replacingOccurrences(of: ",", with: "")
                                 _repo.star = UInt(starsStr) ?? 0
@@ -64,6 +72,9 @@ extension StrayTrending.Parser {
                                 let forkers = forkers.trimFirstAndLastEmptyCharactor().replacingOccurrences(of: ",", with: "")
                                 _repo.forkers = UInt(forkers) ?? 0
                             }
+                            if _repo.star != 0 && _repo.forkers != 0 { break }
+                            starsIndex += 1
+                            forksIndex += 1
                         }
                         ans.append(_repo)
                     }
