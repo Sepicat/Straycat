@@ -114,13 +114,20 @@ extension StrayTrending.Parser {
                                 indexOffset = 1
                             }
                         }
-                        if let repoName = devHTML.xpath("//span")[1 + indexOffset].text {
-                            dev.repoName = repoName.trimFirstAndLastEmptyCharactor()
+                        let len_1_span = devHTML.xpath("//span").count
+                        if 1 + indexOffset < len_1_span {
+                            if let repoName = devHTML.xpath("//span")[1 + indexOffset].text {
+                                dev.repoName = repoName.trimFirstAndLastEmptyCharactor()
+                            }
                         }
-                        if let repoDescription = devHTML.xpath("//span")[2 + indexOffset].text {
-                            dev.repoDescription = repoDescription.trimFirstAndLastEmptyCharactor()
+                        
+                        let len_2_span = devHTML.xpath("//span").count
+                        if 2 + indexOffset < len_2_span {
+                            if let repoDescription = devHTML.xpath("//span")[2 + indexOffset].text {
+                                dev.repoDescription = repoDescription.trimFirstAndLastEmptyCharactor()
+                            }
+                            ans.append(dev)
                         }
-                        ans.append(dev)
                     }
                 }
                 let end = Date().timeIntervalSince1970
