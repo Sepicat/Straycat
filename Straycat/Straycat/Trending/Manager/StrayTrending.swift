@@ -41,7 +41,7 @@ extension StrayTrending {
                           time: TrendingTimeRange = .today,
                           tool: StrayParser.ParserTool = .swiftSoup,
                           header: [String: String]? = nil,
-                          completion: @escaping (Bool, [StrayTrendingRepo]?) -> Void) {
+                          completion: @escaping (Bool, [StrayRepo]?) -> Void) {
         guard let url = URL(string: "https://github.com/trending/\(language)") else {
             return
         }
@@ -52,7 +52,7 @@ extension StrayTrending {
             .responseString(queue: nil, encoding: .utf8) { response in
             switch response.result {
             case .success(let data):
-                StrayTrending.Parser.fetchHandle(tool, type: .repository, html: data, completion: { completion(true, $0 as? [StrayTrendingRepo]) })
+                StrayTrending.Parser.fetchHandle(tool, type: .repository, html: data, completion: { completion(true, $0 as? [StrayRepo]) })
             case .failure(let error):
                 print(error.localizedDescription)
             }
@@ -64,7 +64,7 @@ extension StrayTrending {
                          time: TrendingTimeRange = .today,
                          tool: StrayParser.ParserTool = .swiftSoup,
                          header: [String: String]? = nil,
-                         completion: @escaping (Bool, [StrayTrendingDev]?) -> Void) {
+                         completion: @escaping (Bool, [StrayDev]?) -> Void) {
         guard let url = URL(string: "https://github.com/trending/developers/\(language)") else {
             return
         }
@@ -75,7 +75,7 @@ extension StrayTrending {
             .responseString(queue: nil, encoding: .utf8) { response in
             switch response.result {
             case .success(let data):
-                StrayTrending.Parser.fetchHandle(tool, type: .developer, html: data, completion: { completion(true, $0 as? [StrayTrendingDev]) })
+                StrayTrending.Parser.fetchHandle(tool, type: .developer, html: data, completion: { completion(true, $0 as? [StrayDev]) })
             case .failure(let error):
                 print(error.localizedDescription)
             }

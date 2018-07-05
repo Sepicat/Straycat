@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		33AE47A4B8B48C8FEB1ABAF8 /* Pods_StraycatSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9557A6254E3345A67BF8E96 /* Pods_StraycatSample.framework */; };
 		7576B36520688AE300FCD9A6 /* StrayTrendingParser+SwiftSoup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7576B36420688AE300FCD9A6 /* StrayTrendingParser+SwiftSoup.swift */; };
 		7576B36720688B2500FCD9A6 /* StrayTrendingParser+Kanna.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7576B36620688B2500FCD9A6 /* StrayTrendingParser+Kanna.swift */; };
 		75C8182E20A07AD90018A610 /* Array+Safe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C8182D20A07AD90018A610 /* Array+Safe.swift */; };
@@ -24,11 +23,12 @@
 		75D0F3E6205B923D004D313D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75D0F3E5205B923D004D313D /* Assets.xcassets */; };
 		75D0F3E9205B923D004D313D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75D0F3E7205B923D004D313D /* LaunchScreen.storyboard */; };
 		75D0F3F4205B923D004D313D /* StraycatSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D0F3F3205B923D004D313D /* StraycatSampleTests.swift */; };
+		8FE979E9F434373576CA6D07 /* Pods_StraycatSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9557A6254E3345A67BF8E96 /* Pods_StraycatSample.framework */; };
 		BC4C8AA81F69534B032CB3C7 /* Pods_Straycat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E47102B8719AC2D321F1A75 /* Pods_Straycat.framework */; };
-		D51B553F205C185C005F1DF0 /* Straycat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75D0F3B1205B77B2004D313D /* Straycat.framework */; };
-		D51B5540205C185C005F1DF0 /* Straycat.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 75D0F3B1205B77B2004D313D /* Straycat.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D51B5547205C1D58005F1DF0 /* StrayTrendingParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51B5545205C1D50005F1DF0 /* StrayTrendingParser.swift */; };
 		D51B5549205C2262005F1DF0 /* StrayParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51B5548205C2262005F1DF0 /* StrayParser.swift */; };
+		D5D7972C20ED348A00C2A9C3 /* Straycat.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 75D0F3B1205B77B2004D313D /* Straycat.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D5D7973320ED9A8C00C2A9C3 /* StraySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D7973220ED9A8C00C2A9C3 /* StraySearch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +46,7 @@
 			remoteGlobalIDString = 75D0F3DB205B923C004D313D;
 			remoteInfo = StraycatSample;
 		};
-		D51B5541205C185C005F1DF0 /* PBXContainerItemProxy */ = {
+		D5D7972D20ED348A00C2A9C3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 75D0F3A8205B77B2004D313D /* Project object */;
 			proxyType = 1;
@@ -56,13 +56,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		D51B5543205C185C005F1DF0 /* Embed Frameworks */ = {
+		D5D7972F20ED348A00C2A9C3 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				D51B5540205C185C005F1DF0 /* Straycat.framework in Embed Frameworks */,
+				D5D7972C20ED348A00C2A9C3 /* Straycat.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -102,6 +102,7 @@
 		D51B5545205C1D50005F1DF0 /* StrayTrendingParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrayTrendingParser.swift; sourceTree = "<group>"; };
 		D51B5548205C2262005F1DF0 /* StrayParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrayParser.swift; sourceTree = "<group>"; };
 		D5286C8589E80395F2F62C43 /* Pods-Straycat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Straycat.release.xcconfig"; path = "Pods/Target Support Files/Pods-Straycat/Pods-Straycat.release.xcconfig"; sourceTree = "<group>"; };
+		D5D7973220ED9A8C00C2A9C3 /* StraySearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StraySearch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,8 +127,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D51B553F205C185C005F1DF0 /* Straycat.framework in Frameworks */,
-				33AE47A4B8B48C8FEB1ABAF8 /* Pods_StraycatSample.framework in Frameworks */,
+				8FE979E9F434373576CA6D07 /* Pods_StraycatSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,6 +178,9 @@
 			children = (
 				75D0F3B4205B77B2004D313D /* Straycat.h */,
 				D51B5548205C2262005F1DF0 /* StrayParser.swift */,
+				75C8182C20A07ABB0018A610 /* Helper */,
+				75D0F3CC205B78CC004D313D /* Model */,
+				D5D7973020ED9A5D00C2A9C3 /* Search */,
 				75D0F3CB205B78C5004D313D /* Trending */,
 				75D0F3B5205B77B2004D313D /* Info.plist */,
 			);
@@ -197,10 +200,8 @@
 		75D0F3CB205B78C5004D313D /* Trending */ = {
 			isa = PBXGroup;
 			children = (
-				75C8182C20A07ABB0018A610 /* Helper */,
 				D51B5544205C1D0E005F1DF0 /* Manager */,
 				75D0F3CF205B796E004D313D /* Parse */,
-				75D0F3CC205B78CC004D313D /* Model */,
 			);
 			path = Trending;
 			sourceTree = "<group>";
@@ -275,6 +276,22 @@
 			path = Manager;
 			sourceTree = "<group>";
 		};
+		D5D7973020ED9A5D00C2A9C3 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				D5D7973120ED9A7300C2A9C3 /* Manager */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		D5D7973120ED9A7300C2A9C3 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				D5D7973220ED9A8C00C2A9C3 /* StraySearch.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -335,14 +352,14 @@
 				75D0F3D8205B923C004D313D /* Sources */,
 				75D0F3D9205B923C004D313D /* Frameworks */,
 				75D0F3DA205B923C004D313D /* Resources */,
-				D51B5543205C185C005F1DF0 /* Embed Frameworks */,
 				28454003919D4C03DAC526FE /* [CP] Embed Pods Frameworks */,
 				DB19410AA67ECB62C2124147 /* [CP] Copy Pods Resources */,
+				D5D7972F20ED348A00C2A9C3 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				D51B5542205C185C005F1DF0 /* PBXTargetDependency */,
+				D5D7972E20ED348A00C2A9C3 /* PBXTargetDependency */,
 			);
 			name = StraycatSample;
 			productName = StraycatSample;
@@ -553,6 +570,7 @@
 				75D0F3D1205B7987004D313D /* StrayTrending.swift in Sources */,
 				75C8182E20A07AD90018A610 /* Array+Safe.swift in Sources */,
 				75D0F3CE205B78F1004D313D /* StrayTrendingModel.swift in Sources */,
+				D5D7973320ED9A8C00C2A9C3 /* StraySearch.swift in Sources */,
 				7576B36520688AE300FCD9A6 /* StrayTrendingParser+SwiftSoup.swift in Sources */,
 				D51B5547205C1D58005F1DF0 /* StrayTrendingParser.swift in Sources */,
 			);
@@ -597,10 +615,10 @@
 			target = 75D0F3DB205B923C004D313D /* StraycatSample */;
 			targetProxy = 75D0F3F0205B923D004D313D /* PBXContainerItemProxy */;
 		};
-		D51B5542205C185C005F1DF0 /* PBXTargetDependency */ = {
+		D5D7972E20ED348A00C2A9C3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 75D0F3B0205B77B2004D313D /* Straycat */;
-			targetProxy = D51B5541205C185C005F1DF0 /* PBXContainerItemProxy */;
+			targetProxy = D5D7972D20ED348A00C2A9C3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
