@@ -13,7 +13,7 @@
 		75D0F3BB205B77B2004D313D /* Straycat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75D0F3B1205B77B2004D313D /* Straycat.framework */; };
 		75D0F3C0205B77B2004D313D /* StraycatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D0F3BF205B77B2004D313D /* StraycatTests.swift */; };
 		75D0F3C2205B77B2004D313D /* Straycat.h in Headers */ = {isa = PBXBuildFile; fileRef = 75D0F3B4205B77B2004D313D /* Straycat.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		75D0F3CE205B78F1004D313D /* StrayTrendingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D0F3CD205B78F1004D313D /* StrayTrendingModel.swift */; };
+		75D0F3CE205B78F1004D313D /* StrayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D0F3CD205B78F1004D313D /* StrayModel.swift */; };
 		75D0F3D1205B7987004D313D /* StrayTrending.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D0F3D0205B7987004D313D /* StrayTrending.swift */; };
 		75D0F3D3205B8000004D313D /* StraycatTrendingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D0F3D2205B8000004D313D /* StraycatTrendingTests.swift */; };
 		75D0F3D7205B8687004D313D /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 75D0F3D6205B8687004D313D /* libxml2.tbd */; };
@@ -29,6 +29,7 @@
 		D51B5549205C2262005F1DF0 /* StrayParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51B5548205C2262005F1DF0 /* StrayParser.swift */; };
 		D5D7972C20ED348A00C2A9C3 /* Straycat.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 75D0F3B1205B77B2004D313D /* Straycat.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D5D7973320ED9A8C00C2A9C3 /* StraySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D7973220ED9A8C00C2A9C3 /* StraySearch.swift */; };
+		D5D7973B20F57CBA00C2A9C3 /* StrayAnalysis.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D7973A20F57CBA00C2A9C3 /* StrayAnalysis.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,7 +82,7 @@
 		75D0F3BA205B77B2004D313D /* StraycatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StraycatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75D0F3BF205B77B2004D313D /* StraycatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StraycatTests.swift; sourceTree = "<group>"; };
 		75D0F3C1205B77B2004D313D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		75D0F3CD205B78F1004D313D /* StrayTrendingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrayTrendingModel.swift; sourceTree = "<group>"; };
+		75D0F3CD205B78F1004D313D /* StrayModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrayModel.swift; sourceTree = "<group>"; };
 		75D0F3D0205B7987004D313D /* StrayTrending.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrayTrending.swift; sourceTree = "<group>"; };
 		75D0F3D2205B8000004D313D /* StraycatTrendingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StraycatTrendingTests.swift; sourceTree = "<group>"; };
 		75D0F3D4205B866C004D313D /* libxml2.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.2.tbd; path = usr/lib/libxml2.2.tbd; sourceTree = SDKROOT; };
@@ -103,6 +104,7 @@
 		D51B5548205C2262005F1DF0 /* StrayParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrayParser.swift; sourceTree = "<group>"; };
 		D5286C8589E80395F2F62C43 /* Pods-Straycat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Straycat.release.xcconfig"; path = "Pods/Target Support Files/Pods-Straycat/Pods-Straycat.release.xcconfig"; sourceTree = "<group>"; };
 		D5D7973220ED9A8C00C2A9C3 /* StraySearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StraySearch.swift; sourceTree = "<group>"; };
+		D5D7973A20F57CBA00C2A9C3 /* StrayAnalysis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrayAnalysis.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +184,7 @@
 				75D0F3CC205B78CC004D313D /* Model */,
 				D5D7973020ED9A5D00C2A9C3 /* Search */,
 				75D0F3CB205B78C5004D313D /* Trending */,
+				D5D7973820F51FD000C2A9C3 /* Analysis */,
 				75D0F3B5205B77B2004D313D /* Info.plist */,
 			);
 			path = Straycat;
@@ -209,7 +212,7 @@
 		75D0F3CC205B78CC004D313D /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				75D0F3CD205B78F1004D313D /* StrayTrendingModel.swift */,
+				75D0F3CD205B78F1004D313D /* StrayModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -288,6 +291,22 @@
 			isa = PBXGroup;
 			children = (
 				D5D7973220ED9A8C00C2A9C3 /* StraySearch.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		D5D7973820F51FD000C2A9C3 /* Analysis */ = {
+			isa = PBXGroup;
+			children = (
+				D5D7973920F57C7700C2A9C3 /* Manager */,
+			);
+			path = Analysis;
+			sourceTree = "<group>";
+		};
+		D5D7973920F57C7700C2A9C3 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				D5D7973A20F57CBA00C2A9C3 /* StrayAnalysis.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -569,8 +588,9 @@
 				7576B36720688B2500FCD9A6 /* StrayTrendingParser+Kanna.swift in Sources */,
 				75D0F3D1205B7987004D313D /* StrayTrending.swift in Sources */,
 				75C8182E20A07AD90018A610 /* Array+Safe.swift in Sources */,
-				75D0F3CE205B78F1004D313D /* StrayTrendingModel.swift in Sources */,
+				75D0F3CE205B78F1004D313D /* StrayModel.swift in Sources */,
 				D5D7973320ED9A8C00C2A9C3 /* StraySearch.swift in Sources */,
+				D5D7973B20F57CBA00C2A9C3 /* StrayAnalysis.swift in Sources */,
 				7576B36520688AE300FCD9A6 /* StrayTrendingParser+SwiftSoup.swift in Sources */,
 				D51B5547205C1D58005F1DF0 /* StrayTrendingParser.swift in Sources */,
 			);
