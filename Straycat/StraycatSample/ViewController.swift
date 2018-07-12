@@ -15,9 +15,13 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
 //        StrayTrending.shared.fe
-        StrayTrending.shared.fetchDev(tool: .kanna) { _, _ in }
+//        StrayTrending.shared.fetchDev(tool: .kanna) { _, _ in }
+//
+//        StrayTrending.shared.fetchRepo(tool: .swiftSoup) { _,_ in }
         
-        StrayTrending.shared.fetchRepo(tool: .swiftSoup) { _,_ in }
+        StrayAnalysis.shared.fetchUserAnalysis(type: .psfg, login: "Desgard") { success, analysis in
+            
+        }
     }
 }
 

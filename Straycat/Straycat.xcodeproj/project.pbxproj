@@ -25,10 +25,12 @@
 		75D0F3F4205B923D004D313D /* StraycatSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D0F3F3205B923D004D313D /* StraycatSampleTests.swift */; };
 		8FE979E9F434373576CA6D07 /* Pods_StraycatSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9557A6254E3345A67BF8E96 /* Pods_StraycatSample.framework */; };
 		BC4C8AA81F69534B032CB3C7 /* Pods_Straycat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E47102B8719AC2D321F1A75 /* Pods_Straycat.framework */; };
+		D50B87E920F6DF51007FB840 /* StrayAnalysisModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50B87E820F6DF51007FB840 /* StrayAnalysisModel.swift */; };
 		D51B5547205C1D58005F1DF0 /* StrayTrendingParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51B5545205C1D50005F1DF0 /* StrayTrendingParser.swift */; };
 		D51B5549205C2262005F1DF0 /* StrayParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51B5548205C2262005F1DF0 /* StrayParser.swift */; };
 		D5D7972C20ED348A00C2A9C3 /* Straycat.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 75D0F3B1205B77B2004D313D /* Straycat.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D5D7973320ED9A8C00C2A9C3 /* StraySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D7973220ED9A8C00C2A9C3 /* StraySearch.swift */; };
+		D5D7973B20F57CBA00C2A9C3 /* StrayAnalysis.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D7973A20F57CBA00C2A9C3 /* StrayAnalysis.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,10 +101,12 @@
 		83C91DC08077DBE424CE85C1 /* Pods-StraycatSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StraycatSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-StraycatSample/Pods-StraycatSample.release.xcconfig"; sourceTree = "<group>"; };
 		B6342CACBDC93842F28B3C59 /* Pods-StraycatSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StraycatSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StraycatSample/Pods-StraycatSample.debug.xcconfig"; sourceTree = "<group>"; };
 		B9557A6254E3345A67BF8E96 /* Pods_StraycatSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StraycatSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D50B87E820F6DF51007FB840 /* StrayAnalysisModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrayAnalysisModel.swift; sourceTree = "<group>"; };
 		D51B5545205C1D50005F1DF0 /* StrayTrendingParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrayTrendingParser.swift; sourceTree = "<group>"; };
 		D51B5548205C2262005F1DF0 /* StrayParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrayParser.swift; sourceTree = "<group>"; };
 		D5286C8589E80395F2F62C43 /* Pods-Straycat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Straycat.release.xcconfig"; path = "Pods/Target Support Files/Pods-Straycat/Pods-Straycat.release.xcconfig"; sourceTree = "<group>"; };
 		D5D7973220ED9A8C00C2A9C3 /* StraySearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StraySearch.swift; sourceTree = "<group>"; };
+		D5D7973A20F57CBA00C2A9C3 /* StrayAnalysis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrayAnalysis.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +186,7 @@
 				75D0F3CC205B78CC004D313D /* Model */,
 				D5D7973020ED9A5D00C2A9C3 /* Search */,
 				75D0F3CB205B78C5004D313D /* Trending */,
+				D5D7973820F51FD000C2A9C3 /* Analysis */,
 				75D0F3B5205B77B2004D313D /* Info.plist */,
 			);
 			path = Straycat;
@@ -210,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				75D0F3CD205B78F1004D313D /* StrayTrendingModel.swift */,
+				D50B87E820F6DF51007FB840 /* StrayAnalysisModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -288,6 +294,22 @@
 			isa = PBXGroup;
 			children = (
 				D5D7973220ED9A8C00C2A9C3 /* StraySearch.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		D5D7973820F51FD000C2A9C3 /* Analysis */ = {
+			isa = PBXGroup;
+			children = (
+				D5D7973920F57C7700C2A9C3 /* Manager */,
+			);
+			path = Analysis;
+			sourceTree = "<group>";
+		};
+		D5D7973920F57C7700C2A9C3 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				D5D7973A20F57CBA00C2A9C3 /* StrayAnalysis.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -571,6 +593,8 @@
 				75C8182E20A07AD90018A610 /* Array+Safe.swift in Sources */,
 				75D0F3CE205B78F1004D313D /* StrayTrendingModel.swift in Sources */,
 				D5D7973320ED9A8C00C2A9C3 /* StraySearch.swift in Sources */,
+				D5D7973B20F57CBA00C2A9C3 /* StrayAnalysis.swift in Sources */,
+				D50B87E920F6DF51007FB840 /* StrayAnalysisModel.swift in Sources */,
 				7576B36520688AE300FCD9A6 /* StrayTrendingParser+SwiftSoup.swift in Sources */,
 				D51B5547205C1D58005F1DF0 /* StrayTrendingParser.swift in Sources */,
 			);
