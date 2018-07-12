@@ -22,7 +22,7 @@ extension StrayTrending.Parser {
     }
     
     /// Trending Repo HTML Parser
-    static func parserByKannaForRepository(_ html: String) -> [StrayTrendingRepo]? {
+    static func parserByKannaForRepository(_ html: String) -> [StrayRepo]? {
         // the timestamp for parser begin
         let begin = Date().timeIntervalSince1970
         
@@ -30,11 +30,11 @@ extension StrayTrending.Parser {
             if  let ol = doc.at_xpath("//ol", namespaces: ["class": "repo-list"])?.toHTML,
                 let repoListHtml = try? HTML(html: ol, encoding: .utf8)
                     .xpath("//li", namespaces: ["class": "col-12 d-block width-full py-4 border-bottom"]) {
-                var ans: [StrayTrendingRepo] = []
+                var ans: [StrayRepo] = []
                 for repo in repoListHtml {
                     guard let repoHTMLStr = repo.toHTML else { continue }
                     if let repoHTML = try? HTML(html: repoHTMLStr, encoding: .utf8) {
-                        var _repo = StrayTrendingRepo()
+                        var _repo = StrayRepo()
                         if let fullname = repoHTML.at_xpath("//a")?.text {
                             _repo.fullname = fullname.trimEmptyCharactor()
                         }
@@ -88,18 +88,18 @@ extension StrayTrending.Parser {
     }
     
     /// Trending Dev HTML Parser
-    static func parserByKannaForDeveloper(_ html: String) -> [StrayTrendingDev]? {
+    static func parserByKannaForDeveloper(_ html: String) -> [StrayDev]? {
         // the timestamp for parser begin
         let begin = Date().timeIntervalSince1970
         if let doc = try? HTML(html: html, encoding: .utf8) {
             if  let ol = doc.at_xpath("//ol", namespaces: ["class": "list-style-none"])?.toHTML,
                 let devListHtml = try? HTML(html: ol, encoding: .utf8)
                     .xpath("//li", namespaces: ["class": "d-sm-flex flex-justify-between border-bottom border-gray-light py-3"]) {
-                var ans: [StrayTrendingDev] = []
+                var ans: [StrayDev] = []
                 for dev in devListHtml {
                     guard let devHTMLStr = dev.toHTML else { continue }
                     if let devHTML = try? HTML(html: devHTMLStr, encoding: .utf8) {
-                        var dev = StrayTrendingDev()
+                        var dev = StrayDev()
                         // 下标偏移量
                         var indexOffset = 0
                         if  let avatarUrl = devHTML.at_xpath("//img"),

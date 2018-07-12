@@ -22,15 +22,15 @@ extension StrayTrending.Parser {
     }
     
     /// Trending Repo HTML Parser
-    static func parserBySwiftSoupForRepository(_ html: String) -> [StrayTrendingRepo]? {
+    static func parserBySwiftSoupForRepository(_ html: String) -> [StrayRepo]? {
         let begin = Date().timeIntervalSince1970
         do {
             let doc: Document = try SwiftSoup.parse(html)
             if let ol: Elements = try! doc.select("ol").attr("class", "repo-list").first()?.children() {
                 let repoListHtml = ol.array()
-                let repos: [StrayTrendingRepo] = repoListHtml.map {
-                    element -> StrayTrendingRepo in
-                    var repo = StrayTrendingRepo()
+                let repos: [StrayRepo] = repoListHtml.map {
+                    element -> StrayRepo in
+                    var repo = StrayRepo()
                     repo.fullname = try! element
                         .select("h3").first()?.text() ?? ""
                     
@@ -89,15 +89,15 @@ extension StrayTrending.Parser {
     }
     
     /// Trending Dev HTML Parser
-    static func parserBySwiftSoupForDeveloper(_ html: String) -> [StrayTrendingDev]? {
+    static func parserBySwiftSoupForDeveloper(_ html: String) -> [StrayDev]? {
         let begin = Date().timeIntervalSince1970
         do {
             let doc: Document = try SwiftSoup.parse(html)
             if let ol: Elements = try! doc.select("ol").attr("class", "list-style-none").first()?.children() {
                 let devListHtml = ol.array()
-                let devs: [StrayTrendingDev] = devListHtml.map {
-                    element -> StrayTrendingDev in
-                    var dev = StrayTrendingDev()
+                let devs: [StrayDev] = devListHtml.map {
+                    element -> StrayDev in
+                    var dev = StrayDev()
                     dev.avatar = try! element
                         .select("img").attr("class", "rounded-1").first()?.attr("src") ?? ""
                     (dev.login, dev.nickname) = try! element

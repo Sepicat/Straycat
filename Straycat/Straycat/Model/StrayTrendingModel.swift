@@ -9,7 +9,7 @@
 import UIKit
 
 /// Trending Repo Model
-public struct StrayTrendingRepo {
+public struct StrayRepo {
     public var language: String = ""
     public var fullname: String = ""
     public var description: String = ""
@@ -19,7 +19,7 @@ public struct StrayTrendingRepo {
 }
 
 /// Trending Dev Model
-public struct StrayTrendingDev {
+public struct StrayDev {
     public var avatar: String = ""
     public var login: String = ""
     public var nickname: String = ""
