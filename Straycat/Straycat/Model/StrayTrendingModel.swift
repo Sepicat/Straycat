@@ -26,12 +26,3 @@ public struct StrayDev {
     public var repoName: String = ""
     public var repoDescription: String = ""
 }
-
-/// Analysis
-public struct StrayUserAnalysis {
-    
-    public struct User {
-        public var hireable: Bool
-        public var createdAt: UInt
-    }
-}

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 public class StrayAnalysis: NSObject {
     
@@ -21,4 +22,29 @@ public class StrayAnalysis: NSObject {
 
 extension StrayAnalysis {
     
+    /// 获取分析资料信息
+    public func fetchUserAnalysis(type: StrayAnalysis.AnalysisType,
+                                  login: String,
+                                  header: [String: String]? = nil,
+                                  completion: @escaping (Bool, StrayUserAnalysis?) -> Void) {
+        guard let url = URL(string: "https://profile-summary-for-github.com/api/user/\(login)") else {
+            completion(false, nil)
+            return
+        }
+        
+        Alamofire.request(url, method: .get, parameters: nil, encoding: URLEncoding.default, headers: header)
+            .responseData { response in
+                guard let data = response.data else {
+                    completion(false, nil)
+                    return
+                }
+                do {
+                    let userAnalysis = try JSONDecoder().decode(StrayUserAnalysis.self, from: data)
+                    completion(true, userAnalysis)
+                } catch(let exception) {
+                    print("StrayAnalysis: \(exception.localizedDescription)")
+                    completion(false, nil)
+                }
+        }
+    }
 }
