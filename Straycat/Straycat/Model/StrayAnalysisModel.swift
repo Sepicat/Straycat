@@ -39,26 +39,82 @@ public class StrayUserAnalysis: Decodable {
     }
     
     // 季度 Commit 统计
-    public class CommitTrend: Codable {
+    public class CommitTrend {
         public var quarter: String = ""
         public var commitCount: UInt = 0
+        
+        init(quarter: String, commitCount: UInt) {
+            self.quarter = quarter
+            self.commitCount = commitCount
+        }
+    }
+    
+    // 仓库
+    public class Repository {
+        private(set) var name: String = ""
+        private(set) var description: String? = nil
+        private(set) var starCount: UInt? = nil
+        private(set) var language: String? = nil
+        
+        init(name: String, desc: String? = nil, starCount: UInt? = nil, language: String? = nil) {
+            self.name = name
+            self.description = desc
+            self.starCount = starCount
+            self.language = language
+        }
+    }
+    
+    // 语言
+    public class Language {
+        private(set) var name: String = ""
+        private(set) var commitCount: UInt? = nil
+        private(set) var starCount: UInt? = nil
+        private(set) var repoCount: UInt? = nil
+        
+        init(name: String, commitCount: UInt? = nil, starCount: UInt? = nil, repoCount: UInt? = nil) {
+            self.name = name
+            self.commitCount = commitCount
+            self.starCount = starCount
+            self.repoCount = repoCount
+        }
     }
     
     // 仓库语言统计
-    
     public var user: User = User()
-    public var quarterCommitCount: [String: Int] = [:]
-    
+    public var quarterCommitCount: [CommitTrend] = []
+    public var topStarRepos: [Repository] = []
+    public var commitLanguageCount: [Language] = []
+
     enum CodingKeys: String, CodingKey {
         case user = "user"
         case quarterCommitCount = "quarterCommitCount"
+        case repoStarCount = "repoStarCount"
+        case repoStarCountDescriptions = "repoStarCountDescriptions"
+        case langCommitCount = "langCommitCount"
     }
     
     required public init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         let user = try values.decode(User.self, forKey: .user)
-        let qcc = try values.decode(Dictionary<String, Int>.self, forKey: .quarterCommitCount)
+        let qcc = try values.decode(Dictionary<String, UInt>.self, forKey: .quarterCommitCount)
+        let rsc = try values.decode(Dictionary<String, UInt>.self, forKey: .repoStarCount)
+        let rscd = try values.decode(Dictionary<String, String>.self, forKey: .repoStarCountDescriptions)
+        let lcc = try values.decode(Dictionary<String, UInt>.self, forKey: .langCommitCount)
+        
+        // user 信息
         self.user = user
-        self.quarterCommitCount = qcc
+        
+        // commit 季度趋势
+        self.quarterCommitCount = qcc.map { CommitTrend(quarter: $0, commitCount: $1) }
+        
+        // 仓库 top 10
+        self.topStarRepos = rsc.map { key, val -> Repository in
+            let desc = rscd[key] ?? nil
+            return Repository.init(name: key, desc: desc, starCount: val)
+        }
+        
+        // 语言 Rank
+        self.commitLanguageCount = lcc.map { Language(name: $0, commitCount: $1) }
+
     }
 }
