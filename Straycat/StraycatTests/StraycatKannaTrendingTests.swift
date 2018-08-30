@@ -1,6 +1,6 @@
 //
-//  StraycatSampleTests.swift
-//  StraycatSampleTests
+//  StraycatTrendingTests.swift
+//  StraycatTests
 //
 //  Created by Harry Twan on 16/03/2018.
 //  Copyright © 2018 Harry Twan. All rights reserved.
@@ -8,10 +8,9 @@
 
 import XCTest
 
-@testable import StraycatSample
+@testable import Straycat
 
-class StraycatSampleTests: XCTestCase {
-    
+class StraycatKannaTrendingTests: XCTestCase {
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -33,5 +32,4 @@ class StraycatSampleTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
-    
 }
