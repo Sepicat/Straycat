@@ -76,6 +76,14 @@ extension StrayTrending.Parser {
                             starsIndex += 1
                             forksIndex += 1
                         }
+
+                        // 获取头像
+                        if let repoHTMLStr = repoHTML.toHTML, let avatars = try? HTML(html: repoHTMLStr, encoding: .utf8)
+                            .xpath("////img") {
+                            if avatars.count > 0 {
+                                print(avatars[0].toHTML)
+                            }
+                        }
                         ans.append(_repo)
                     }
                 }
