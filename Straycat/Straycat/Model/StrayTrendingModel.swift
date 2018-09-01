@@ -16,7 +16,7 @@ public struct StrayRepo {
     public var star: UInt = 0
     public var forkers: UInt = 0
     public var gains: String = ""
-    public var avatar: String = ""
+    public var avatar: [String] = []
 }
 
 /// Trending Dev Model
