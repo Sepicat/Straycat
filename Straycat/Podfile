@@ -5,11 +5,14 @@ inhibit_all_warnings!
 target 'Straycat' do
     pod 'SwiftSoup', '~> 1.6.3'
     pod 'Alamofire', '~> 4.5'
-    pod 'Kanna', '~> 4.0.0'
+    pod 'Kanna'
 end
 
 target 'StraycatSample' do
-    pod 'SwiftSoup', '~> 1.6.3'
-    pod 'Kanna', '~> 4.0.0'
-    pod 'Alamofire', '~> 4.5'
+end
+
+target 'StraycatTests' do
+    use_frameworks!
+    pod 'Nimble'
+    pod 'Kanna'
 end

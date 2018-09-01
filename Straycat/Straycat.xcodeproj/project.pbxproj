@@ -15,7 +15,6 @@
 		75D0F3C2205B77B2004D313D /* Straycat.h in Headers */ = {isa = PBXBuildFile; fileRef = 75D0F3B4205B77B2004D313D /* Straycat.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		75D0F3CE205B78F1004D313D /* StrayTrendingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D0F3CD205B78F1004D313D /* StrayTrendingModel.swift */; };
 		75D0F3D1205B7987004D313D /* StrayTrending.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D0F3D0205B7987004D313D /* StrayTrending.swift */; };
-		75D0F3D3205B8000004D313D /* StraycatTrendingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D0F3D2205B8000004D313D /* StraycatTrendingTests.swift */; };
 		75D0F3D7205B8687004D313D /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 75D0F3D6205B8687004D313D /* libxml2.tbd */; };
 		75D0F3DF205B923D004D313D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D0F3DE205B923D004D313D /* AppDelegate.swift */; };
 		75D0F3E1205B923D004D313D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D0F3E0205B923D004D313D /* ViewController.swift */; };
@@ -23,6 +22,7 @@
 		75D0F3E6205B923D004D313D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75D0F3E5205B923D004D313D /* Assets.xcassets */; };
 		75D0F3E9205B923D004D313D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75D0F3E7205B923D004D313D /* LaunchScreen.storyboard */; };
 		75D0F3F4205B923D004D313D /* StraycatSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D0F3F3205B923D004D313D /* StraycatSampleTests.swift */; };
+		8428A828213840E0000798B6 /* StraycatKannaTrendingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8428A827213840E0000798B6 /* StraycatKannaTrendingTests.swift */; };
 		8FE979E9F434373576CA6D07 /* Pods_StraycatSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9557A6254E3345A67BF8E96 /* Pods_StraycatSample.framework */; };
 		BC4C8AA81F69534B032CB3C7 /* Pods_Straycat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E47102B8719AC2D321F1A75 /* Pods_Straycat.framework */; };
 		D50B87E920F6DF51007FB840 /* StrayAnalysisModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50B87E820F6DF51007FB840 /* StrayAnalysisModel.swift */; };
@@ -31,6 +31,7 @@
 		D5D7972C20ED348A00C2A9C3 /* Straycat.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 75D0F3B1205B77B2004D313D /* Straycat.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D5D7973320ED9A8C00C2A9C3 /* StraySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D7973220ED9A8C00C2A9C3 /* StraySearch.swift */; };
 		D5D7973B20F57CBA00C2A9C3 /* StrayAnalysis.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D7973A20F57CBA00C2A9C3 /* StrayAnalysis.swift */; };
+		F631EB18820ACDBD620F8706 /* Pods_StraycatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95381D6A21E8EEC40423BF2A /* Pods_StraycatTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5DEF0FBB9FD156BCAFF799E6 /* Pods-StraycatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StraycatTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StraycatTests/Pods-StraycatTests.debug.xcconfig"; sourceTree = "<group>"; };
 		68B9D9D734D2A385AC262147 /* Pods-Straycat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Straycat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Straycat/Pods-Straycat.debug.xcconfig"; sourceTree = "<group>"; };
 		6E47102B8719AC2D321F1A75 /* Pods_Straycat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Straycat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7576B36420688AE300FCD9A6 /* StrayTrendingParser+SwiftSoup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StrayTrendingParser+SwiftSoup.swift"; sourceTree = "<group>"; };
@@ -85,7 +87,6 @@
 		75D0F3C1205B77B2004D313D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75D0F3CD205B78F1004D313D /* StrayTrendingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrayTrendingModel.swift; sourceTree = "<group>"; };
 		75D0F3D0205B7987004D313D /* StrayTrending.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrayTrending.swift; sourceTree = "<group>"; };
-		75D0F3D2205B8000004D313D /* StraycatTrendingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StraycatTrendingTests.swift; sourceTree = "<group>"; };
 		75D0F3D4205B866C004D313D /* libxml2.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.2.tbd; path = usr/lib/libxml2.2.tbd; sourceTree = SDKROOT; };
 		75D0F3D6205B8687004D313D /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
 		75D0F3DC205B923C004D313D /* StraycatSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StraycatSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,6 +100,9 @@
 		75D0F3F3205B923D004D313D /* StraycatSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StraycatSampleTests.swift; sourceTree = "<group>"; };
 		75D0F3F5205B923D004D313D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83C91DC08077DBE424CE85C1 /* Pods-StraycatSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StraycatSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-StraycatSample/Pods-StraycatSample.release.xcconfig"; sourceTree = "<group>"; };
+		8428A827213840E0000798B6 /* StraycatKannaTrendingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StraycatKannaTrendingTests.swift; sourceTree = "<group>"; };
+		95381D6A21E8EEC40423BF2A /* Pods_StraycatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StraycatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A236293180633D5513C144D4 /* Pods-StraycatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StraycatTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-StraycatTests/Pods-StraycatTests.release.xcconfig"; sourceTree = "<group>"; };
 		B6342CACBDC93842F28B3C59 /* Pods-StraycatSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StraycatSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StraycatSample/Pods-StraycatSample.debug.xcconfig"; sourceTree = "<group>"; };
 		B9557A6254E3345A67BF8E96 /* Pods_StraycatSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StraycatSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D50B87E820F6DF51007FB840 /* StrayAnalysisModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrayAnalysisModel.swift; sourceTree = "<group>"; };
@@ -124,6 +128,7 @@
 			files = (
 				75D0F3D7205B8687004D313D /* libxml2.tbd in Frameworks */,
 				75D0F3BB205B77B2004D313D /* Straycat.framework in Frameworks */,
+				F631EB18820ACDBD620F8706 /* Pods_StraycatTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,7 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				75D0F3BF205B77B2004D313D /* StraycatTests.swift */,
-				75D0F3D2205B8000004D313D /* StraycatTrendingTests.swift */,
+				8428A827213840E0000798B6 /* StraycatKannaTrendingTests.swift */,
 				75D0F3C1205B77B2004D313D /* Info.plist */,
 			);
 			path = StraycatTests;
@@ -259,6 +264,8 @@
 				D5286C8589E80395F2F62C43 /* Pods-Straycat.release.xcconfig */,
 				B6342CACBDC93842F28B3C59 /* Pods-StraycatSample.debug.xcconfig */,
 				83C91DC08077DBE424CE85C1 /* Pods-StraycatSample.release.xcconfig */,
+				5DEF0FBB9FD156BCAFF799E6 /* Pods-StraycatTests.debug.xcconfig */,
+				A236293180633D5513C144D4 /* Pods-StraycatTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -270,6 +277,7 @@
 				75D0F3D4205B866C004D313D /* libxml2.2.tbd */,
 				6E47102B8719AC2D321F1A75 /* Pods_Straycat.framework */,
 				B9557A6254E3345A67BF8E96 /* Pods_StraycatSample.framework */,
+				95381D6A21E8EEC40423BF2A /* Pods_StraycatTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -352,9 +360,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 75D0F3C8205B77B2004D313D /* Build configuration list for PBXNativeTarget "StraycatTests" */;
 			buildPhases = (
+				61FAB447BDA9A19E750019C6 /* [CP] Check Pods Manifest.lock */,
 				75D0F3B6205B77B2004D313D /* Sources */,
 				75D0F3B7205B77B2004D313D /* Frameworks */,
 				75D0F3B8205B77B2004D313D /* Resources */,
+				C732208C7414BC3BA9A6B316 /* [CP] Embed Pods Frameworks */,
+				77C3E447D8BE5F1077BD21A0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -532,6 +543,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		61FAB447BDA9A19E750019C6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StraycatTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		73BAEA89072D24D2A9C15B40 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -545,6 +574,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Straycat/Pods-Straycat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77C3E447D8BE5F1077BD21A0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StraycatTests/Pods-StraycatTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C732208C7414BC3BA9A6B316 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-StraycatTests/Pods-StraycatTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kanna/Kanna.framework",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftSoup/SwiftSoup.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kanna.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSoup.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StraycatTests/Pods-StraycatTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DB19410AA67ECB62C2124147 /* [CP] Copy Pods Resources */ = {
@@ -604,8 +672,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8428A828213840E0000798B6 /* StraycatKannaTrendingTests.swift in Sources */,
 				75D0F3C0205B77B2004D313D /* StraycatTests.swift in Sources */,
-				75D0F3D3205B8000004D313D /* StraycatTrendingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -828,6 +896,7 @@
 		};
 		75D0F3C9205B77B2004D313D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DEF0FBB9FD156BCAFF799E6 /* Pods-StraycatTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -843,6 +912,7 @@
 		};
 		75D0F3CA205B77B2004D313D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A236293180633D5513C144D4 /* Pods-StraycatTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -897,6 +967,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DNL5G5M9A8;
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
 				INFOPLIST_FILE = StraycatSampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.desgard.StraycatSampleTests;
@@ -914,6 +985,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DNL5G5M9A8;
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
 				INFOPLIST_FILE = StraycatSampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.desgard.StraycatSampleTests;
