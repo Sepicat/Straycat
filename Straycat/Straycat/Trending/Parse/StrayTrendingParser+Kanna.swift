@@ -83,7 +83,12 @@ extension StrayTrending.Parser {
                             let avatars = try? HTML(html: repoHTMLStr, encoding: .utf8).css("img") {
                             for avatar in avatars {
                                 if let avatar = avatar["src"] {
-                                    _repo.avatar.append(avatar)
+                                    if let urlComponent = URLComponents.init(string: avatar),
+                                        let scheme = urlComponent.scheme,
+                                        let host = urlComponent.host {
+                                        let newUrl = "\(scheme)://\(host)\(urlComponent.path)"
+                                        _repo.avatar.append(newUrl)
+                                    }
                                 }
                             }
                         }

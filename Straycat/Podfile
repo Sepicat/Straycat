@@ -15,4 +15,5 @@ target 'StraycatTests' do
     use_frameworks!
     pod 'Nimble'
     pod 'Kanna'
+    pod 'PySwiftyRegex', '~> 2.0.1'
 end

@@ -2,20 +2,23 @@ PODS:
   - Alamofire (4.7.3)
   - Kanna (4.0.1)
   - Nimble (7.1.3)
+  - PySwiftyRegex (2.0.1)
   - SwiftSoup (1.6.5)
 
 DEPENDENCIES:
   - Alamofire (~> 4.5)
   - Kanna
   - Nimble
+  - PySwiftyRegex (~> 2.0.1)
   - SwiftSoup (~> 1.6.3)
 
 SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
   Kanna: 15569a2331b79782a1753cf280c8e69e2a033654
   Nimble: 2839b01d1b31f6a6a7777a221f0d91cf52e8e27b
+  PySwiftyRegex: 18ee6bede93377ce133ca9c1e8cc0446ac988be4
   SwiftSoup: f62a354a0b1273287fb27464b4a0b33bac319390
 
-PODFILE CHECKSUM: a9a73946923b9bb5cb33d2b771c6d4433cf4dac3
+PODFILE CHECKSUM: 19d1ef157f779bd0f69fe15d402874178ec57094
 
 COCOAPODS: 1.3.1
