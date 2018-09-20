@@ -25,7 +25,6 @@ extension StrayTrending.Parser {
     static func parserByKannaForRepository(_ html: String) -> [StrayRepo]? {
         // the timestamp for parser begin
         let begin = Date().timeIntervalSince1970
-        var cnt = 0
 
         if let doc = try? HTML(html: html, encoding: .utf8) {
             if  let ol = doc.at_xpath("//ol", namespaces: ["class": "repo-list"])?.toHTML,

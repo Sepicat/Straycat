@@ -13,12 +13,12 @@ import PySwiftyRegex
 
 @testable import Straycat
 
-class StraycatKannaTrendingTests: XCTestCase {
+class Trending: XCTestCase {
 
     static let AsyncTimeout: TimeInterval = 10
     static let ItemsCount = 25
 
-    typealias TT = StraycatKannaTrendingTests
+    typealias TT = Trending
 
     override func setUp() {
         super.setUp()
