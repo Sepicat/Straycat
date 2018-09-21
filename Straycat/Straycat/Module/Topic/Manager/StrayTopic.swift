@@ -9,7 +9,7 @@
 import UIKit
 import Alamofire
 
-class StrayTopic: NSObject {
+public class StrayTopic: NSObject {
     
     public enum TopicType {
         /// Topic: https://github.com/topics/vim
@@ -33,7 +33,7 @@ extension StrayTopic.TopicType {
     }
 }
 
-extension StrayTopic  {
+extension StrayTopic {
     /// 获取 Topic 列表信息
     public func fetchRepo(tool: StrayParser.ParserTool = .kanna,
                           header: [String: String]? = nil,
