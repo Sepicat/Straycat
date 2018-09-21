@@ -6,6 +6,7 @@ target 'Straycat' do
     pod 'SwiftSoup', '~> 1.6.3'
     pod 'Alamofire', '~> 4.5'
     pod 'Kanna'
+    pod 'PySwiftyRegex', '~> 2.0.1'
 end
 
 target 'StraycatSample' do

@@ -22,7 +22,13 @@
 		75D0F3E6205B923D004D313D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75D0F3E5205B923D004D313D /* Assets.xcassets */; };
 		75D0F3E9205B923D004D313D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75D0F3E7205B923D004D313D /* LaunchScreen.storyboard */; };
 		75D0F3F4205B923D004D313D /* StraycatSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D0F3F3205B923D004D313D /* StraycatSampleTests.swift */; };
-		8428A828213840E0000798B6 /* StraycatKannaTrendingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8428A827213840E0000798B6 /* StraycatKannaTrendingTests.swift */; };
+		8428A828213840E0000798B6 /* Trending.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8428A827213840E0000798B6 /* Trending.swift */; };
+		84780DCC215340F2002C78CD /* StrayTopic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84780DCB215340F2002C78CD /* StrayTopic.swift */; };
+		84780DCF21537EAC002C78CD /* StrayTopicParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84780DCE21537EAC002C78CD /* StrayTopicParser.swift */; };
+		84780DD121537F7A002C78CD /* StrayTopicParser+Kanna.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84780DD021537F7A002C78CD /* StrayTopicParser+Kanna.swift */; };
+		84780DD52153E0C3002C78CD /* StrayAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84780DD42153E0C3002C78CD /* StrayAvatar.swift */; };
+		84780DD72153E263002C78CD /* Avatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84780DD62153E263002C78CD /* Avatar.swift */; };
+		84F1FDE92152AE68009FD94F /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F1FDE82152AE68009FD94F /* Topic.swift */; };
 		8FE979E9F434373576CA6D07 /* Pods_StraycatSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9557A6254E3345A67BF8E96 /* Pods_StraycatSample.framework */; };
 		BC4C8AA81F69534B032CB3C7 /* Pods_Straycat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E47102B8719AC2D321F1A75 /* Pods_Straycat.framework */; };
 		D50B87E920F6DF51007FB840 /* StrayAnalysisModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50B87E820F6DF51007FB840 /* StrayAnalysisModel.swift */; };
@@ -100,7 +106,13 @@
 		75D0F3F3205B923D004D313D /* StraycatSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StraycatSampleTests.swift; sourceTree = "<group>"; };
 		75D0F3F5205B923D004D313D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83C91DC08077DBE424CE85C1 /* Pods-StraycatSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StraycatSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-StraycatSample/Pods-StraycatSample.release.xcconfig"; sourceTree = "<group>"; };
-		8428A827213840E0000798B6 /* StraycatKannaTrendingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StraycatKannaTrendingTests.swift; sourceTree = "<group>"; };
+		8428A827213840E0000798B6 /* Trending.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trending.swift; sourceTree = "<group>"; };
+		84780DCB215340F2002C78CD /* StrayTopic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrayTopic.swift; sourceTree = "<group>"; };
+		84780DCE21537EAC002C78CD /* StrayTopicParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrayTopicParser.swift; sourceTree = "<group>"; };
+		84780DD021537F7A002C78CD /* StrayTopicParser+Kanna.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StrayTopicParser+Kanna.swift"; sourceTree = "<group>"; };
+		84780DD42153E0C3002C78CD /* StrayAvatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrayAvatar.swift; sourceTree = "<group>"; };
+		84780DD62153E263002C78CD /* Avatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Avatar.swift; sourceTree = "<group>"; };
+		84F1FDE82152AE68009FD94F /* Topic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
 		95381D6A21E8EEC40423BF2A /* Pods_StraycatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StraycatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A236293180633D5513C144D4 /* Pods-StraycatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StraycatTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-StraycatTests/Pods-StraycatTests.release.xcconfig"; sourceTree = "<group>"; };
 		B6342CACBDC93842F28B3C59 /* Pods-StraycatSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StraycatSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StraycatSample/Pods-StraycatSample.debug.xcconfig"; sourceTree = "<group>"; };
@@ -187,11 +199,9 @@
 			children = (
 				75D0F3B4205B77B2004D313D /* Straycat.h */,
 				D51B5548205C2262005F1DF0 /* StrayParser.swift */,
-				75C8182C20A07ABB0018A610 /* Helper */,
+				84780DD32153E082002C78CD /* Module */,
 				75D0F3CC205B78CC004D313D /* Model */,
-				D5D7973020ED9A5D00C2A9C3 /* Search */,
-				75D0F3CB205B78C5004D313D /* Trending */,
-				D5D7973820F51FD000C2A9C3 /* Analysis */,
+				75C8182C20A07ABB0018A610 /* Helper */,
 				75D0F3B5205B77B2004D313D /* Info.plist */,
 			);
 			path = Straycat;
@@ -201,7 +211,9 @@
 			isa = PBXGroup;
 			children = (
 				75D0F3BF205B77B2004D313D /* StraycatTests.swift */,
-				8428A827213840E0000798B6 /* StraycatKannaTrendingTests.swift */,
+				8428A827213840E0000798B6 /* Trending.swift */,
+				84F1FDE82152AE68009FD94F /* Topic.swift */,
+				84780DD62153E263002C78CD /* Avatar.swift */,
 				75D0F3C1205B77B2004D313D /* Info.plist */,
 			);
 			path = StraycatTests;
@@ -255,6 +267,52 @@
 				75D0F3F5205B923D004D313D /* Info.plist */,
 			);
 			path = StraycatSampleTests;
+			sourceTree = "<group>";
+		};
+		84780DCA215340CB002C78CD /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				84780DCB215340F2002C78CD /* StrayTopic.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		84780DCD21537E36002C78CD /* Parse */ = {
+			isa = PBXGroup;
+			children = (
+				84780DCE21537EAC002C78CD /* StrayTopicParser.swift */,
+				84780DD021537F7A002C78CD /* StrayTopicParser+Kanna.swift */,
+			);
+			path = Parse;
+			sourceTree = "<group>";
+		};
+		84780DD22153DEB0002C78CD /* Avatar */ = {
+			isa = PBXGroup;
+			children = (
+				84780DD42153E0C3002C78CD /* StrayAvatar.swift */,
+			);
+			path = Avatar;
+			sourceTree = "<group>";
+		};
+		84780DD32153E082002C78CD /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				84780DD22153DEB0002C78CD /* Avatar */,
+				D5D7973020ED9A5D00C2A9C3 /* Search */,
+				84F1FDE72152AC80009FD94F /* Topic */,
+				75D0F3CB205B78C5004D313D /* Trending */,
+				D5D7973820F51FD000C2A9C3 /* Analysis */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		84F1FDE72152AC80009FD94F /* Topic */ = {
+			isa = PBXGroup;
+			children = (
+				84780DCD21537E36002C78CD /* Parse */,
+				84780DCA215340CB002C78CD /* Manager */,
+			);
+			path = Topic;
 			sourceTree = "<group>";
 		};
 		A1C7596A3B5011999EF0F925 /* Pods */ = {
@@ -512,12 +570,14 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-StraycatSample/Pods-StraycatSample-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Kanna/Kanna.framework",
+				"${BUILT_PRODUCTS_DIR}/PySwiftyRegex/PySwiftyRegex.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftSoup/SwiftSoup.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kanna.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PySwiftyRegex.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSoup.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -599,16 +659,16 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-StraycatTests/Pods-StraycatTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Kanna/Kanna.framework",
-				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/PySwiftyRegex/PySwiftyRegex.framework",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftSoup/SwiftSoup.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kanna.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PySwiftyRegex.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSoup.framework",
 			);
@@ -657,7 +717,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84780DCF21537EAC002C78CD /* StrayTopicParser.swift in Sources */,
 				D51B5549205C2262005F1DF0 /* StrayParser.swift in Sources */,
+				84780DCC215340F2002C78CD /* StrayTopic.swift in Sources */,
 				7576B36720688B2500FCD9A6 /* StrayTrendingParser+Kanna.swift in Sources */,
 				75D0F3D1205B7987004D313D /* StrayTrending.swift in Sources */,
 				75C8182E20A07AD90018A610 /* Array+Safe.swift in Sources */,
@@ -665,7 +727,9 @@
 				D5D7973320ED9A8C00C2A9C3 /* StraySearch.swift in Sources */,
 				D5D7973B20F57CBA00C2A9C3 /* StrayAnalysis.swift in Sources */,
 				D50B87E920F6DF51007FB840 /* StrayAnalysisModel.swift in Sources */,
+				84780DD121537F7A002C78CD /* StrayTopicParser+Kanna.swift in Sources */,
 				7576B36520688AE300FCD9A6 /* StrayTrendingParser+SwiftSoup.swift in Sources */,
+				84780DD52153E0C3002C78CD /* StrayAvatar.swift in Sources */,
 				D51B5547205C1D58005F1DF0 /* StrayTrendingParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -674,7 +738,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8428A828213840E0000798B6 /* StraycatKannaTrendingTests.swift in Sources */,
+				8428A828213840E0000798B6 /* Trending.swift in Sources */,
+				84F1FDE92152AE68009FD94F /* Topic.swift in Sources */,
+				84780DD72153E263002C78CD /* Avatar.swift in Sources */,
 				75D0F3C0205B77B2004D313D /* StraycatTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

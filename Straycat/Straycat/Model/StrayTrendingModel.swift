@@ -14,6 +14,7 @@ public struct StrayRepo {
     public var fullname: String = ""
     public var description: String = ""
     public var star: UInt = 0
+    public var starStr: String = ""
     public var forkers: UInt = 0
     public var gains: String = ""
     public var avatar: [String] = []
