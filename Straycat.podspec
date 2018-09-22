@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "Straycat"
-  s.version      = "0.1.0"
+  s.version      = "0.1.2"
   s.summary      = "The github parser for Sepicat"
   s.description  = <<-DESC
   Parse the github data, which can't be given by github.

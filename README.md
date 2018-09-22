@@ -15,10 +15,11 @@
 ## 进度
 
 - [x] **Trending** 信息获取。[link - 这个是官方的 Trending 信息](https://github.com/trending)
+- [x] **Topic** 信息获取。[link - 这个是官方的 Topic 信息](https://github.com/topic)
 - [ ] **Contribution** 信息获取。[link - 这个是作者的 Contributions 页面](https://github.com/users/Desgard/contributions)
 - [ ] **Octodex** 章鱼猫作品展。[link - octodex 主页](https://octodex.github.com)
 - [ ] **githubrank** 中国区 GitHub 用户排行榜。[link - githubrank 排行版](http://githubrank.com/)
-- [ ] **profile-summary-for-github.com** 数据分析聚合。[profile-summary-for-github](https://profile-summary-for-github.com/user/desgard)
+- [x] **profile-summary-for-github.com** 数据分析聚合。[profile-summary-for-github](https://profile-summary-for-github.com/user/desgard)
 
 ## 依赖库
 
