@@ -28,6 +28,10 @@
 		84780DD121537F7A002C78CD /* StrayTopicParser+Kanna.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84780DD021537F7A002C78CD /* StrayTopicParser+Kanna.swift */; };
 		84780DD52153E0C3002C78CD /* StrayAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84780DD42153E0C3002C78CD /* StrayAvatar.swift */; };
 		84780DD72153E263002C78CD /* Avatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84780DD62153E263002C78CD /* Avatar.swift */; };
+		84780DDE2155DF4A002C78CD /* StrayContribution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84780DDD2155DF4A002C78CD /* StrayContribution.swift */; };
+		84780DE02155E8F8002C78CD /* StrayContributionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84780DDF2155E8F7002C78CD /* StrayContributionModel.swift */; };
+		84780DE22155EA8D002C78CD /* StrayContributionParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84780DE12155EA8D002C78CD /* StrayContributionParser.swift */; };
+		84780DE42155F6F7002C78CD /* Contribution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84780DE32155F6F7002C78CD /* Contribution.swift */; };
 		84F1FDE92152AE68009FD94F /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F1FDE82152AE68009FD94F /* Topic.swift */; };
 		8FE979E9F434373576CA6D07 /* Pods_StraycatSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9557A6254E3345A67BF8E96 /* Pods_StraycatSample.framework */; };
 		BC4C8AA81F69534B032CB3C7 /* Pods_Straycat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E47102B8719AC2D321F1A75 /* Pods_Straycat.framework */; };
@@ -112,6 +116,10 @@
 		84780DD021537F7A002C78CD /* StrayTopicParser+Kanna.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StrayTopicParser+Kanna.swift"; sourceTree = "<group>"; };
 		84780DD42153E0C3002C78CD /* StrayAvatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrayAvatar.swift; sourceTree = "<group>"; };
 		84780DD62153E263002C78CD /* Avatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Avatar.swift; sourceTree = "<group>"; };
+		84780DDD2155DF4A002C78CD /* StrayContribution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrayContribution.swift; sourceTree = "<group>"; };
+		84780DDF2155E8F7002C78CD /* StrayContributionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrayContributionModel.swift; sourceTree = "<group>"; };
+		84780DE12155EA8D002C78CD /* StrayContributionParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrayContributionParser.swift; sourceTree = "<group>"; };
+		84780DE32155F6F7002C78CD /* Contribution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contribution.swift; sourceTree = "<group>"; };
 		84F1FDE82152AE68009FD94F /* Topic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
 		95381D6A21E8EEC40423BF2A /* Pods_StraycatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StraycatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A236293180633D5513C144D4 /* Pods-StraycatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StraycatTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-StraycatTests/Pods-StraycatTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -214,6 +222,7 @@
 				8428A827213840E0000798B6 /* Trending.swift */,
 				84F1FDE82152AE68009FD94F /* Topic.swift */,
 				84780DD62153E263002C78CD /* Avatar.swift */,
+				84780DE32155F6F7002C78CD /* Contribution.swift */,
 				75D0F3C1205B77B2004D313D /* Info.plist */,
 			);
 			path = StraycatTests;
@@ -233,6 +242,7 @@
 			children = (
 				75D0F3CD205B78F1004D313D /* StrayTrendingModel.swift */,
 				D50B87E820F6DF51007FB840 /* StrayAnalysisModel.swift */,
+				84780DDF2155E8F7002C78CD /* StrayContributionModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -297,6 +307,7 @@
 		84780DD32153E082002C78CD /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				84780DDC2155DF26002C78CD /* Contribution */,
 				84780DD22153DEB0002C78CD /* Avatar */,
 				D5D7973020ED9A5D00C2A9C3 /* Search */,
 				84F1FDE72152AC80009FD94F /* Topic */,
@@ -304,6 +315,15 @@
 				D5D7973820F51FD000C2A9C3 /* Analysis */,
 			);
 			path = Module;
+			sourceTree = "<group>";
+		};
+		84780DDC2155DF26002C78CD /* Contribution */ = {
+			isa = PBXGroup;
+			children = (
+				84780DDD2155DF4A002C78CD /* StrayContribution.swift */,
+				84780DE12155EA8D002C78CD /* StrayContributionParser.swift */,
+			);
+			path = Contribution;
 			sourceTree = "<group>";
 		};
 		84F1FDE72152AC80009FD94F /* Topic */ = {
@@ -719,12 +739,15 @@
 			files = (
 				84780DCF21537EAC002C78CD /* StrayTopicParser.swift in Sources */,
 				D51B5549205C2262005F1DF0 /* StrayParser.swift in Sources */,
+				84780DE22155EA8D002C78CD /* StrayContributionParser.swift in Sources */,
 				84780DCC215340F2002C78CD /* StrayTopic.swift in Sources */,
 				7576B36720688B2500FCD9A6 /* StrayTrendingParser+Kanna.swift in Sources */,
 				75D0F3D1205B7987004D313D /* StrayTrending.swift in Sources */,
+				84780DE02155E8F8002C78CD /* StrayContributionModel.swift in Sources */,
 				75C8182E20A07AD90018A610 /* Array+Safe.swift in Sources */,
 				75D0F3CE205B78F1004D313D /* StrayTrendingModel.swift in Sources */,
 				D5D7973320ED9A8C00C2A9C3 /* StraySearch.swift in Sources */,
+				84780DDE2155DF4A002C78CD /* StrayContribution.swift in Sources */,
 				D5D7973B20F57CBA00C2A9C3 /* StrayAnalysis.swift in Sources */,
 				D50B87E920F6DF51007FB840 /* StrayAnalysisModel.swift in Sources */,
 				84780DD121537F7A002C78CD /* StrayTopicParser+Kanna.swift in Sources */,
@@ -742,6 +765,7 @@
 				84F1FDE92152AE68009FD94F /* Topic.swift in Sources */,
 				84780DD72153E263002C78CD /* Avatar.swift in Sources */,
 				75D0F3C0205B77B2004D313D /* StraycatTests.swift in Sources */,
+				84780DE42155F6F7002C78CD /* Contribution.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
