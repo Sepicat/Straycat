@@ -11,10 +11,10 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/Sepicat/Straycat.git", :tag => "0.1.0" }
   s.source_files  =  "Straycat/Straycat/**/*.{swift}"
   s.ios.deployment_target = '10.0'
-  s.dependency 'Alamofire', '~> 4.5'
-  s.dependency 'SwiftSoup', '~> 1.6.3'
-  s.dependency 'PySwiftyRegex', '~> 2.0.1'
+  s.dependency 'Alamofire'
+  s.dependency 'SwiftSoup'
+  s.dependency 'PySwiftyRegex'
 
   s.pod_target_xcconfig = { 'HEADER_SEARCH_PATHS' => "$(SDKROOT)/usr/include/libxml2" }
-  s.dependency 'Kanna', '~> 4.0.0'
+  s.dependency 'Kanna'
 end
